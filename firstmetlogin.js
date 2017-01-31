@@ -19,13 +19,9 @@ module.exports = {
       .saveScreenshot('./screenshots/firstmet2.png')
       .setValue('input[name=email]', ['arose728@gmail.com'])
       .setValue('input[name=password]', ['password'])
-      //.saveScreenshot('./screenshots/firstmet' n++ + '.png')
-      /*.click('button[value=submit]', function(result) {
-        this.assert.strictEqual(result.status, 0);
-      })
-      */
       .useXpath()
       .click('//*[@id="aui"]/div[4]/header/div[2]/div/form/fieldset[2]/input[4]')
+      .end()
     }
 
 };
